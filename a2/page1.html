@@ -1,0 +1,80 @@
+<!-- page1.html by Richard O'Brien S0460356 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PAGE 1</title>
+    </head>
+    
+    <body>
+		<h1>Richard O'Brien's page1.html</h1>
+		
+		<a href="obrienA2.html">INDEX PAGE</a><br />
+		
+		<hr>
+			<p>
+			This <sub>substantial</sub><code>code</code> is <sup><b>super bold</b></sup>, and <i>italic</i>.
+			</p>
+		<br />
+		
+		<hr>
+			<p>
+			The logical thing to do here is to <strong>strongly</strong> <em>emphasize</em> this sentence.
+			</p>
+		<hr>
+			<p> Here is some preformatted text, taken from <a href="http://www.badprogramming.com/code/
+			Bit-manipulation-%28taken-from-a-real-project%29"><cite>badprogramming.com</cite></a> </p> 
+			
+		<br />
+			
+		<pre>
+		  1:  #define bit_pos_0   (0x01)
+		  2:  #define bit_pos_1   (0x02)
+		  3:  #define bit_pos_2   (0x04)
+		  4:  #define bit_pos_3   (0x08)
+		  5:  #define bit_pos_4   (0x10)
+		  6:  #define bit_pos_5   (0x20)
+		  7:  #define bit_pos_6   (0x40)
+		  8:  #define bit_pos_7   (0x80)
+		  9:  
+		 10:  static int get_bit_value(int value, int bit_position)
+		 11:  {
+		 12:      int result = 0;
+		 13:  
+		 14:      switch(bit_position)
+		 15:      {
+		 16:          case bit0: { result = (value & bit_pos_0); } break;
+		 17:          case bit1: { result = (value & bit_pos_1); } break;
+		 18:          case bit2: { result = (value & bit_pos_2); } break;
+		 19:          case bit3: { result = (value & bit_pos_3); } break;
+		 20:          case bit4: { result = (value & bit_pos_4); } break;
+		 21:          case bit5: { result = (value & bit_pos_5); } break;
+		 22:          case bit6: { result = (value & bit_pos_6); } break;
+		 23:          case bit7: { result = (value & bit_pos_7); } break;
+		 24:      }
+		 25:  
+		 26:      result = (result >> bit_position);
+		 27:  
+		 28:      return result;
+		 29:  }
+		 30:  
+		 31:  static int set_bit_value(int value, int bit_position)
+		 32:  {
+		 33:      int result = 0;
+		 34:  
+		 35:      switch(bit_position)
+		 36:      {
+		 37:          case bit0: { result = (value | bit_pos_0); } break;
+		 38:          case bit1: { result = (value | bit_pos_1); } break;
+		 39:          case bit2: { result = (value | bit_pos_2); } break;
+		 40:          case bit3: { result = (value | bit_pos_3); } break;
+		 41:          case bit4: { result = (value | bit_pos_4); } break;
+		 42:          case bit5: { result = (value | bit_pos_5); } break;
+		 43:          case bit6: { result = (value | bit_pos_6); } break;
+		 44:          case bit7: { result = (value | bit_pos_7); } break;
+		 45:      }
+		 46:      return result;
+		 47:  }
+		</pre>
+			
+    </body>
+</html>

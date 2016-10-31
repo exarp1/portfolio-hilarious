@@ -1,0 +1,56 @@
+/***************************************************************************
+*    \author Richard O'Brien s0460356
+*    \date   2013/11/8 - modified 2013/11/20
+*    \brief  This document styles the multiplication table in snazzy colors
+*            and makes the numbers look centered. 
+*            It's inentionally ironic bronyism.
+***************************************************************************/
+
+/* body ruleset */
+body {
+    /*background image properties*/
+    background: url("../images/rainbowDash.png") no-repeat fixed left top;
+    background-size: cover;
+    height: 768px;
+    width: 1024px;
+
+    /* font properties */
+    //font-family:"Comic Sans MS";
+    //font-size:large;
+    //font-weight: 900;
+}
+
+/* div (tile) rulesets */
+.blue { background-color: rgba( 125,100,225,0.5); }
+.red { background-color: rgba( 225,100,125,0.5);} 
+.tile { float:left; }
+
+/* div (tile) ruleset */
+div {
+    display: inline-block;
+    //font-family:"Comic Sans MS";
+    //font-size:large;
+    //font-weight: 900;
+}
+#container {
+    height: 768px;
+    width: 1024px;
+}
+div div {
+    background-color: rgba( 125,100,225,0.5); 
+    padding: 5px; 
+    border: 3px outset purple;
+    text-align: center;
+    line-height: 30px;
+    width: 30px
+}
+
+/* table ruleset */
+table { 
+    border-collapse: collapse; 
+    background-color: rgba( 255,100,125,0.5); 
+    font-weight: normal;
+    text-align: center;
+}
+th { border: 3px solid black; padding: 10px; }
+td { border: 3px solid purple; font-size: large;  padding: 10px; }

@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<title>This is a test page for jQuery</title>
+    <link href="js/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet">
+<script src="js/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+<script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+<script>
+$(function(){
+    // Container DIV
+  /*  var $main0 = $('<div />', {
+        class: 'container0',
+        appendTo: $( 'body' )
+    });
+*/
+    // My Clickable Picture
+    var $myPic = $('<a />', {
+        class: 'myPicture',
+        //appendTo: $main0
+        appendTo: $( 'body' )
+    });
+
+    var $pic = $( '<img />', {
+        class: 'profilePic',
+        src:   'images/PROFILE_PIC.jpg',
+        width: '640',
+        height: '480',
+        alt:    'my profile picture',
+        appendTo: $myPic
+    });
+});
+</script>
+    </body>
+    </html>

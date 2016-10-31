@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+\author		Richard O'Brien s0460356
+\date 		2013/11/8
+\brief		This document calls multiply(),
+				a javascript function in a separate file to
+				create a times table. Styling is also in a separate file.
+\includes 	assignment6.js, assignment6.css in current directory
+				for scripting and style.
+-->
+
+
+<html>
+	<head>
+		<title> ASSIGNMENT SIX </title>
+		<link rel="stylesheet" type="text/css" href="assignment6.css">
+		<script src="assignment6.js" type="text/javascript"></script>
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+	<a href="../index.html">HOME</a><br />
+	<h1>Multiplication table:</h1>
+	<form>
+		<input name="rows" id="rows" value="5" />
+		<input name="cols" id="cols" value="5" />
+		<input name="mult" id="func" value="Make table" type="submit" 
+			onclick="multiply(this.form);" />
+	</form>
+	</body>
+
+</html>

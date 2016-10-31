@@ -1,0 +1,92 @@
+/*=================================================================*/
+/*====================== DEFAULTS =================================*/
+/*=================================================================*/
+div {
+    height: 1em;                /* default heights */
+    width: 100%;                /* default widths */
+    margin: 0px;                /* default margin - none */
+    padding: 0px;               /* default padding - none */
+    border: 1px solid black;    /* default border on all sides of box */
+    background-color: #FFFFFF;  /* white background for all divs */
+}
+body 
+{
+    /*background image properties*/
+    /* shorthand is background: color image repeat attachment position */
+    background: url("../images/rainbowDash.png") no-repeat fixed left top;
+    background-size: cover;
+    opacity: 0.95; /* gotta show it through a bit */
+}
+/*=================================================================*/
+/*====================== CLASSES ==================================*/
+/*=================================================================*/
+
+div.head 
+{
+    display: inline-block;  /* line the boxes up L-R */
+    float: left;
+    height: 250px;       /* to match with img size in assignment 3 */
+    line-height: 249px;
+    text-align: center;
+    width: 49.88%;      /* accounts for border width */
+}
+
+img
+{
+    width:250px; /* to match with img size in assignment 3 */
+    height:250px;
+ }
+
+div.mid {
+    clear: left;
+    border-top: none;       /* eliminate double borders */
+    padding: 0 0 5px 5px;
+    width: inherit;
+}
+
+div.bottom 
+{
+    border-top:none;        /* eliminate double borders */
+    display: inline-block;
+    float: left;
+    width: 49.88%;          /* accounts for border width */
+    height: auto;
+}
+
+div.foot 
+{
+    clear: left;
+    border-top:none;    /* eliminate double borders */
+    width: inherit;     /* keeping it consistent with head div */
+    padding: 0 0 5px 5px;
+}
+
+/*=================================================================*/
+/*====================== ID BLOCK =================================*/
+/*=================================================================*/
+#topLeft{
+    font-weight:800;    /* bold */
+}
+
+#topRight {
+    border-left: none;
+}
+
+#middle {
+}
+
+#botLeft {
+}
+
+
+#botRight {
+    border-left: none;
+    padding-bottom: 309px;  /* force div height even with botLeft  */
+    padding-top: 24%;       /* to vertically center the contents   */
+}
+
+#footer
+{
+    text-align:center;
+	text-shadow:5px 5px 10px blue;
+}

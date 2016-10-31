@@ -1,0 +1,64 @@
+@font-face {
+			font-family: "Computer Pixel 7"; /* force user font */
+			src: url("fonts/computer_pixel-7.ttf");
+			}
+		h1	{
+			text-align: center;
+			}
+		body {
+			/*background image properties*/
+			/* shorthand is background: color image repeat attachment position */
+			background: url("images/rainbowDash.png") no-repeat fixed left top;
+			background-size: cover;
+			/* font properties */
+			font-family:"Comic Sans MS";
+			font-size:x-large;
+			font-weight: 900;
+			
+			}
+		.transparentBox {
+			background-color: rgba(255,0,100,0.1); /* rgba nicely provides transparency effect */
+			border-radius: 5px;		/* sharp edges can be dangerous */
+			height: 2048px;			/* much vertical slack to force scrollability */
+            box-shadow: 10px 10px 5px #888888;
+			}
+		.menu {
+			list-style: none;		/* no bullets */
+			margin: 0;				/* no line spacing above and below the list */
+			padding: 0;				/* no indenting for list items: they stack hard left */
+			}
+		.menu li {
+			float: left;			/* aligns items horizontally (left or right) */
+			margin-top: 0;			/* remove all list item margins */
+			margin-bottom: 0;		/* remove all list item margins */
+			margin-left: 0.25em;	/* .25 of the usual space between list items */
+			margin-right: 0.25em;	/* .25 of the usual space between list items */
+			}
+		.menu li a {
+			
+			text-align: center;		/* make text play nice in center of blocks */
+			border: 1px solid AliceBlue; /* add visibility to outside edges of each element */
+			border-radius: 50%;		/* nice rounded edges so no one gets hurt while playing */
+            box-shadow: 10px 10px 5px rgba(0,0,0,0.2);
+			color:white;			/* white text for contrast to background and trans. layer */
+			background: rgba(255,0,200,0.20);		/* trans. pink background */
+			text-decoration: none;	/* remove underlines from anchors */
+			display: block;			/* display the links as blocks format */
+			/*height: 4em;*/		/* twice the height of the font */
+			width: 3.5em;			/* X times as wide  as font height */
+			line-height: 2em; 		/* height X that of regular lines */
+			padding: 1.5em;			/* X times the element's padding inside the border */
+			margin: 1.25em;			/* X times the element's (padded) size outside the border */
+			
+			}
+		.menu li a:hover {			/* alternate styling of links when user hovers on them */
+			font-size: 0.99em;
+			color: rgba(0,255,0,0.85);
+			background-color: rgba(0,0,0,0.3);
+			font-family: "Computer Pixel 7";
+			border-radius: 5%;
+			border: 2px solid black;
+			}
+		.clear {
+			clear: both;			/* clear the float:left so it won't wreck the position of next element */
+			}

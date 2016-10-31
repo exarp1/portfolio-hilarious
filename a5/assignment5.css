@@ -1,0 +1,107 @@
+/*=================================================================*/
+/*====================== DEFAULTS =================================*/
+/*=================================================================*/
+div{
+  width: 1024px;                /* default width */
+	height: auto;					        /* default height */
+	display: inline-block;        /* default inline block display */
+  margin: 0px;                  /* default margin - none */
+  padding: 0px;                 /* default padding - none */
+  background-color: #FFFFFF;    /* white background for all divs */
+}
+
+body 
+{
+  /* background shorthand: color image repeat attachment position */
+  background: url("../images/rainbowDash.png") no-repeat fixed left top;
+  background-size: cover;
+  opacity: 0.9; /* gotta show it through a bit */
+}
+
+
+/*=================================================================*/
+/*====================== ID BLOCK =================================*/
+/*=================================================================*/
+#top
+{
+	float: left;
+	width: 1024px;			/* they are 50% each, now compensate for borders */
+	height: 250px;			/* default height */
+  border: 1px solid black;
+  text-align: center;
+}
+
+#topLeft
+{
+  float: left;
+  font-weight:800;    /* bold */
+  width: 511px;       /* -1px to fix 1px border */
+  line-height: 250px; /* vertically center the text */
+  border-right: 1px solid black;
+}
+
+#topRight 
+{
+  float: left;
+  width: 510px;
+  height: 250px;
+}
+
+#middle 
+{
+  float: left;
+  width:1024px;  
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#bottom
+{
+	float: left;
+  display: inline-block;
+	width: 1024px;			/* they are 50% each, now compensate for borders */
+	height: auto;
+  border: 1px solid black;
+}
+
+#botLeft 
+{
+  float: left;
+  width: 511px;       /* -1px to fix 1px border */
+  border-right: 1px solid black;
+}
+
+
+#botRight 
+{
+  float: left;
+  width: 510px;
+  padding: 334px 0;
+}
+
+#footer
+{
+  text-align:center;
+	text-shadow:5px 5px 10px blue;
+  border-left: 1px solid black;       /* no top border */
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+/*=================================================================*/
+/*====================== CLASSES ==================================*/
+/*=================================================================*/
+div.container
+{
+  width: 1024px;
+}
+
+
+img
+{
+  width:250px; /* to match with img size in assignment 3 */
+  height:250px; /* 2px slack to make borders look good */
+}
+
+/*=================================================================*/

@@ -1,0 +1,39 @@
+/* practice2css by richard O'brien - nov 2, 2013 */
+
+/* body */
+  body { background-color: silver;}
+
+/* paragraphs */
+  p.instructions { text-align: center; font-style: italic; }
+  p.notice { font-size: 200%; }
+
+/* horizontal rule */
+  hr { width: 50%; color: green; border:5px solid green; background-color: #0f0;}
+
+/* headers */
+  h1 { color: #f00; }
+  h2 { color: #0f0; background-color: #fa0; }
+  h2.trans { background-color: transparent; }
+  h2.red { color: #f00; }
+/* open class for over-under line effects */
+.overunder { border-top: 1px solid red; border-bottom: 3px dotted blue; }
+
+/* anchors */
+  a { font-variant: small-caps; }
+  a.reference { background-color: #000; }
+  a.reference:hover { background-color: lime; }
+  a.citweb { border: 3px dotted blue; }
+  a.citweb:hover { font-size: .5em; }
+  a.w3schools { border-left: medium double red; border-right: medium double red; }
+  a.w3schools:hover { font-size: 2em; }
+
+/* table */
+  table,td,tr { border: 1px solid blue; border-collapse: collapse; }
+  th { font-size: 1.5em; }
+  td.group { font-style: italic; font-weight: bold; height: 2em; vertical-align: bottom;  }
+  td.item { text-indent: 5px; }
+  td.cost { text-align: center; }
+
+/* lists */
+  ul { list-style-image: url("http://bit.ly/TRYrSg");}
+  ol { list-style: lower-roman; padding-top: 5px}

@@ -1,0 +1,33 @@
+/* exam 2 - final version: started 5:06pm nov 5, 2013 */
+
+
+/*body*/
+  body { background-color: aliceblue }
+  body.instructions { 
+    background-image: url(smiley.png);
+    background-repeat: no-repeat;
+    background-position: 180px 85px;
+  }
+
+/* headings */
+  h1.exam { color: lime; text-align: center; border-bottom-style: double; border-bottom-width: 6px; }
+
+/* list items */
+  ul.menu li {   margin: 10px 0;   list-style: none;   }
+
+/* ordered list */ 
+  ol li.space { margin: 0.5em 0; }
+
+/* list spans */
+  li span.x2dotcss {font-weight: bold;}
+  li span.dropBox {letter-spacing: 2px;}
+  li span.onlyOneCSS { color:lime; border-left: 6px double; border-right: 6px double; }
+  li span.dontMessWithMe { color:red; border-bottom: 6px double; text-transform: uppercase; }
+  li span.ouL { border-bottom:4px groove green; border-top: 4px groove red; }
+
+/* anchor links */
+a.grow:hover { font-size:2em; }
+a.shrink:hover { font-size:0.5em; }
+
+/* horizontal rule rules <hr> */
+hr.flags { border: none; height: 33px; background: url(CanFlag.gif); }

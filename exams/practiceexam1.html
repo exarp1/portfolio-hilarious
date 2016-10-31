@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- practiceexam1.html , Richard O'Brien, s0460356.
+- \brief this page is a 'template' for the exam, next week
+- it includes:
+-		a heading that indicates the title of the page
+-		a secondary heading that indicates there are two questions to answer
+-		a second paragraph answering each of the following questions:
+-			a. what is the course number and name for this course?
+-			b. what is the format for the image tag that displays the image "happy.jpg", a happy face?
+-		a third (secondary) heading, which indicates that the next thing is a table.
+-		create a table that shows the multiplication table for numbers 1 through 3.
+-->
+
+<html>
+	<head>
+	<title>Practice Exam!</title>
+	<style>
+		table, th, td 
+		{
+		border: 1px solid black;
+		}
+		table
+		{
+		border-collapse: collapse;
+		}
+		tfoot
+		{
+		text-align:center;
+		text-shadow:5px 5px 10px blue;
+		}
+		thead
+		{
+		text-align:center;
+		}
+		
+	</style>
+	</head>
+
+	<body>
+	<a href="http://myweb.lethbridgecollege.ab.ca/~s0460356/index.html">HOME</a><br />
+		<h1>Practice Exam I</h1>
+		<h2>Answers to the two questions:</h2>
+		<p>
+				The course number and name of the course are: 13FL CIT-1157-C02 HTML and Web Publishing.<br />
+		</p>
+		<p>
+			The format for the img tag is: &lt;img [src="&lt;relative/absolute reference&gt;" alt="alternate text to describe the image for blind users(with screen readers) etc."]/&gt;
+				<br />FOR EXAMPLE: <br />
+				&nbsp;&nbsp;&lt;img src="../images/W3C_Icon.svg" alt="W3C LOGO" width="250" height="250" /&gt; <br />
+				&nbsp;&nbsp;&lt;img src="../images/happy.jpg" alt="a happy face" /&gt;
+		</p>
+	
+			
+		
+		<h2>The next thing is a table! 1 - 3</h2>
+		<table>
+		<thead>
+			<tr>
+				<th>&nbsp;</th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>1</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>2</td>
+				<td>4</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>3</td>
+				<td>6</td>
+				<td>9</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">Richard O'Brien - 2013/10/1</td>
+			</tr>
+		</tfoot>
+		</table>
+	</body>
+</html>
